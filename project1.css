@@ -1,0 +1,236 @@
+body{
+    margin:0px;
+    background-color:black;
+}
+/* navigation and search */
+#navigation{
+    width:100%;
+    height:10vh;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:5px;
+}
+.music-icon {
+    color:white;
+    font-size:50px;
+    margin-left:3%;
+}
+.logo{
+    height:20%;
+    color:white;
+    font-size: 1rem;
+    margin-left:1%;
+    font-family: cursive;
+}
+.text{
+    display:block;
+    font-size:0.9rem;
+    color:lightgrey;
+}
+.fav{
+    margin-left:10%;
+    color:white;
+    font-size:1rem;
+    margin-top:1%;
+    font-family: cursive;
+}
+.search-box{
+    width:20%;
+    height:3vh;
+    background-color:#1b1818;
+    margin-top:10px;
+    margin-left:40%;
+    border-bottom-right-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    border-top-left-radius:15px;
+    padding:5px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    box-shadow:0px 0px 5px 2px lightsteelblue;
+
+}
+.search-box .search-icon{
+    color:white;
+    font-size:15px;
+    margin-right:5px;
+}
+.search-box input{
+    color:lightgray;
+    background-color:#1b1818;
+    border-top:0px;
+    border-left:0px;
+    border-right: 0px;
+    border-bottom:0px;
+    font-family: cursive;
+    width:170px;
+}
+button[type="submit"]{
+    background-color:#1b1818;
+    border-top:0px;
+    border-left:0px;
+    border-right: 0px;
+    border-bottom:0px;
+    cursor: pointer;
+}
+.search-box .mic-icon{
+    margin-left:20px;
+    margin-top:3px;
+    color:white;
+    font-size:15px;
+}
+#navigation .bell-icon{
+    color:white;
+    font-size: 20px;
+    margin-top:15px;
+    margin-left:10px;
+}
+#navigation .bell-icon::after{
+    content:'';
+    width:0px;
+    border-radius: 50%;
+    border:1px;
+    position:relative;
+    color: red;
+}
+#navigation img{
+    border-radius:50%;
+    margin-left:40px;
+    margin-top:8px;
+}
+
+
+/* main section */
+
+#all-content{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* song section */
+.song-side{
+    width:75%;
+    height:100%;
+    margin:5px;
+    background-color:#1e1e1e;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+/* song-section-first-images */
+.song-types{
+    width:90%;
+    height:50%;
+    margin:10px;
+    margin-left:30px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.song-types img{
+    box-shadow:0px 0px 10px 6px lightsteelblue;
+    transition:0.3s ease-in-out;
+    height:95%;
+    width:30%;
+    margin-top:5px;
+    opacity:0.8;
+}
+.song-types img:hover{
+    height:110%;
+    width:33%;
+    opacity:0.5;
+    cursor:pointer;
+    font-size:3rem;
+}
+/* song-section-artists */
+.artists{
+    height:30%;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-top:5%;
+}
+.artists img{
+    width:18%;
+    border-radius:50%;
+}
+.artists img:hover{
+    opacity:0.8;
+    cursor: pointer;
+}
+/* podcasts */
+
+.podcasts{
+    width:100%;
+    height:40%;
+    margin-top:5%;
+}
+.podcasts .sub-pod{
+    width:50%;
+    height:10%;
+    display:flex;
+    margin-top:5px;
+    margin-left:5px;
+}
+.podcasts .sub-pod img{
+    height:15%;
+    width:20%;
+    border-radius:25%;
+}
+.small-text{
+    color:white;
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family:CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif),sans-serif;
+}
+.bigg-text{
+    color:black;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.diff-pod{
+    display:flex;
+    width:100%;
+    height:80%;
+    margin-top:2%;
+    justify-content: space-between;
+}
+.diff-pod img{
+    width:18%;
+    height:50%;
+    border-radius:20%;
+    transition:0.2s ease-in-out;
+}
+.diff-pod img:hover{
+    opacity:0.8;
+    width:20%;
+    height:52%;
+    cursor:pointer;
+}
+
+.queue{
+    width:22%;
+    height:90vh;
+    margin:5px;
+    margin-left:-5px;
+    background-color:rgb(13, 13, 59);
+}
+.queue .menu{
+    height:90%;
+    width:90%;
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+.menu-header{
+    display:flex;
+    flex-direction: row;
+    border:2px solid black;
+    flex-wrap:wrap;
+    margin:2%;
+}
