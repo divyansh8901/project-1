@@ -1,0 +1,46 @@
+#main{
+    position: absolute;
+    top:10%;
+    left:35%;
+    height:100%;
+    width:35%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border:2px solid black;
+}
+#result{
+    background-color:lightgrey;
+    width:100%;
+    height:20%;
+    border-bottom:2px solid black;
+}
+.row{
+    width:100%;
+    height:15%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.row-5{
+    width:100%;
+    height:15%;
+    display:flex;
+    flex-wrap: wrap;
+    padding:0px;
+}
+#button{
+    width:24%;
+    height:100%;
+    border:1px solid black;
+    margin:1px;
+}
+h1{
+    font-size: 3rem;
+    margin-left:10%;
+}
+.right{
+    background-color:rgb(121, 62, 62);
+}
